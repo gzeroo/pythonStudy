@@ -157,27 +157,64 @@
 # print("타고")
 # print("가라") # 들여쓰기 되어 있으면 에러 뜸.
 
-a = 3
-b = 5
-c = 4
+# a = 3
+# b = 5
+# c = 4
+#
+# # if b != 3:
+# #     print(a+1)
+# # elif a == 4:
+# #     print(b)
+# # else:
+# #     print(b+c)
+# # print("끝")
+#
+# while a == 3:
+#     a = a+1
+#     if b < a:
+#         print("b는 a 보다 크다")
+#     elif c != 4:
+#         print("c는 4가 아니다")
+#     elif b >= 5:
+#         print("b는 5 이상이다.")
+#         print("b는 {} 이다.".format(5))
+#     else:
+#         print("나머지!")
 
-# if b != 3:
-#     print(a+1)
-# elif a == 4:
-#     print(b)
-# else:
-#     print(b+c)
-# print("끝")
+## while 반복문
+# treeHit = 0
+# while treeHit < 10:
+#     treeHit = treeHit + 1
+#     print("나무를 %d번 찍었습니다." % treeHit)
+#     if treeHit == 10:
+#         print("나무 넘어갑니다.")
+#         break
+#     print("다음 %d번 나무를 쓰러뜨릴 준비를 하세요" %(treeHit+1))
+#
+# coffee = 10
+# while True:
+#     money = int(input("돈을 넣어주세요: "))
+#     if money == 300:
+#         print("커피를 줍니다.")
+#         coffee = coffee -1
+#     elif money > 300:
+#         print("거스름돈 %d를 주고 커피를 줍니다." %(money -300))
+#         coffee = coffee -1
+#     else:
+#         print("돈을 다시 돌려주고 커피를 주지 않습니다.")
+#         print("남은 커피의 양은 %d 개 입니다." % coffee)
+#     if coffee == 0:
+#         print("커피가 다 떨어졌습니다. 판매를 중지합니다.")
+#         break
 
-while a == 3:
-    a = a+1
-    if b < a:
-        print("b는 a 보다 크다")
-    elif c != 4:
-        print("c는 4가 아니다")
-    elif b >= 5:
-        print("b는 5 이상이다.")
-        print("b는 {} 이다.".format(5))
-    else:
-        print("나머지!")
-    break;
+# for 반복문
+
+for i in range(1, 11):
+    print(i)
+
+for _ in range(10): # 변수(i) 사용안할 경우 ' _ ' 이용
+    print("hi")
+
+a_list = [3, 4, 5, 6] # 리스트 안에 있는거 하나하나 i 변수 넣어서 출력
+for i in a_list:
+    print(i)
