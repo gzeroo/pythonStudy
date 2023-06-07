@@ -111,3 +111,73 @@
 # print(student1.pop(0)); # pop // 리스트 인덱스 자리에 있는거 출력 후, 리스트에서 삭제
 # print(student1);
 
+# # 튜플 자료형
+# # 튜플 '()' : 한 번 생성 시 값 수정, 삭제, 삽입 x
+# student1 = (1, 2, 3, '김진욱', '김지영', (1, 2));
+# ## del student1[0]; # 튜플 삭제 안됨 에러 발생
+# ## student1[0] = 2; # 튜플 변경 안됨 에러 발생
+# print(student1);
+
+# # 딕셔너리 자료형
+# student = {"사과":"apple", "바나나":"banana", 1:2, 1:[1,3]} # 키 : 밸류
+# student["망고"] = 'mango';
+# print(student);
+# del student["사과"]; ## 딕셔너리 삭제 할 때는 '키' 값으로 밸류 삭제
+# print(student);
+# print(student["바나나"]);
+
+# # 자료형의 값을 저장하는 공간 / 변수
+# a = [1, 2, 3];
+# b = a;
+# print(id(a));
+# print(id(b));
+
+# # if문(조건문)
+# a = 1
+# b = 2
+# if a > b:
+#     print("a가 b 보다 큽니다")
+# else:
+#     print("b가 a 보다 큽니다")
+
+# a = 2
+# b = 3
+# if a == b:
+#     print("나가주세요!")
+# elif a != 2:
+#     print("엎드려주세요!")
+# else:
+#     print("일어나주세요!")
+#
+# print("끝났다.")
+
+# money = True
+# if money:
+#     print("택시를")
+# print("타고")
+# print("가라") # 들여쓰기 되어 있으면 에러 뜸.
+
+a = 3
+b = 5
+c = 4
+
+# if b != 3:
+#     print(a+1)
+# elif a == 4:
+#     print(b)
+# else:
+#     print(b+c)
+# print("끝")
+
+while a == 3:
+    a = a+1
+    if b < a:
+        print("b는 a 보다 크다")
+    elif c != 4:
+        print("c는 4가 아니다")
+    elif b >= 5:
+        print("b는 5 이상이다.")
+        print("b는 {} 이다.".format(5))
+    else:
+        print("나머지!")
+    break;
