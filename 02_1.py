@@ -207,14 +207,15 @@
 #         print("커피가 다 떨어졌습니다. 판매를 중지합니다.")
 #         break
 
-# for 반복문
 
-for i in range(1, 11):
-    print(i)
-
-for _ in range(10): # 변수(i) 사용안할 경우 ' _ ' 이용
-    print("hi")
-
-a_list = [3, 4, 5, 6] # 리스트 안에 있는거 하나하나 i 변수 넣어서 출력
-for i in a_list:
-    print(i)
+# ##  a -= 1 은 a = a-1 랑 같다. a += 1 도 마찬가지
+# # for 반복문
+# for i in range(1, 11):
+#     print(i)
+#
+# for _ in range(10): # 변수(i) 사용안할 경우 ' _ ' 이용
+#     print("hi")
+#
+# a_list = [3, 4, 5, 6] # 리스트 안에 있는거 하나하나 i 변수 넣어서 출력
+# for i in a_list:
+#     print(i)
