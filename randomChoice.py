@@ -4,6 +4,10 @@ import random
 print("가위 바위 보를 해요!")
 num = int(input("몇회 할까요?: "))
 
+ai_win = 0
+you_win = 0
+num_win = 0
+
 for i in range(num):
     ai = random.choice(["가위", "바위", "보"])
 
@@ -18,11 +22,21 @@ for i in range(num):
 
     if you == ai:
         print("비겼습니다!")
+        num_win += 1
     elif you == "보" and ai == "가위":
         print("ai가 이겼습니다!")
+        ai_win += 1
     elif you == "바위" and ai == "보":
         print("ai가 이겼습니다!")
+        ai_win += 1
     elif you == "가위" and ai == "주먹":
         print("ai가 이겼습니다!")
+        ai_win += 1
     else:
         print("you 가 이겼습니다!")
+        you_win += 1
+
+print("="*50)
+print("가위 바위 보 결과:", you_win,"승", num_win, "무", ai_win, "패")
+print("="*50)
+
